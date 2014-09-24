@@ -23,7 +23,6 @@
 var DEFAULT_PREFERENCES = {
   showPreviousViewOnLoad: true,
   defaultZoomValue: '',
-<<<<<<< HEAD
   sidebarViewOnLoad: 0,
   enableHandToolOnLoad: false,
   enableWebGL: false,
@@ -31,15 +30,14 @@ var DEFAULT_PREFERENCES = {
   disableRange: false,
   disableAutoFetch: false,
   disableFontFace: false,
+  pdfViewSetScale: 1,
 //#if B2G
 //disableTextLayer: true,
 //useOnlyCssZoom: true
 //#else
   disableTextLayer: false,
-  useOnlyCssZoom: false
+  useOnlyCssZoom: false,
 //#endif
-=======
   ifAvailableShowOutlineOnLoad: false,
   twoPageViewModeOnLoad: -1
->>>>>>> snuffeleupagus/twoPageViewMode
 };

@@ -26,11 +26,8 @@ var SecondaryToolbar = {
   initialize: function secondaryToolbarInitialize(options) {
     this.toolbar = options.toolbar;
     this.presentationMode = options.presentationMode;
-<<<<<<< HEAD
     this.documentProperties = options.documentProperties;
-=======
     this.twoPageViewMode = options.twoPageViewMode;
->>>>>>> snuffeleupagus/twoPageViewMode
     this.buttonContainer = this.toolbar.firstElementChild;
 
     // Define the toolbar buttons.
@@ -39,11 +36,7 @@ var SecondaryToolbar = {
     this.openFile = options.openFile;
     this.print = options.print;
     this.download = options.download;
-<<<<<<< HEAD
     this.viewBookmark = options.viewBookmark;
-=======
-
->>>>>>> snuffeleupagus/twoPageViewMode
     this.firstPage = options.firstPage;
     this.lastPage = options.lastPage;
     this.pageRotateCw = options.pageRotateCw;
@@ -70,10 +63,8 @@ var SecondaryToolbar = {
       { element: this.lastPage, handler: this.lastPageClick },
       { element: this.pageRotateCw, handler: this.pageRotateCwClick },
       { element: this.pageRotateCcw, handler: this.pageRotateCcwClick },
-<<<<<<< HEAD
       { element: this.documentPropertiesButton,
-        handler: this.documentPropertiesClick }
-=======
+        handler: this.documentPropertiesClick },
       { element: this.onePageView, handler: this.twoPageViewMode.disable,
         scope: this.twoPageViewMode },
       { element: this.twoPageView, handler: this.twoPageViewMode.enable,
@@ -81,7 +72,6 @@ var SecondaryToolbar = {
       { element: this.twoPageViewShowCoverPage,
         handler: this.twoPageViewMode.toggleCoverPage,
         scope: this.twoPageViewMode }
->>>>>>> snuffeleupagus/twoPageViewMode
     ];
     var element, handler, scope;
     for (var item in elements) {

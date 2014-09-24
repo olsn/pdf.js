@@ -2178,7 +2178,7 @@ function updateViewarea() {
       'zoom': normalizedScaleValue,
       'scrollLeft': intLeft,
       'scrollTop': intTop,
-      'twoPageView', twoPageView
+      'twoPageView': twoPageView
     }).catch(function() {
       // unable to write to storage
     });
