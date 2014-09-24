@@ -83,6 +83,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
     <script src="overlay_manager.js"></script>
     <script src="password_prompt.js"></script>
     <script src="document_properties.js"></script>
+    <script src="two_page_view_mode.js"></script>
 <!--#endif-->
 
 <!--#if !MINIFIED -->
@@ -183,10 +184,22 @@ http://sourceforge.net/adobe/cmap/wiki/License/
 
             <div class="horizontalToolbarSeparator"></div>
 
-            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Enable hand tool" tabindex="60" data-l10n-id="hand_tool_enable">
+            <button id="onePageView" class="secondaryToolbarButton onePageView toggled" title="One Page View" tabindex="27" data-l10n-id="one_page_view">
+              <span data-l10n-id="one_page_view_label">One Page View</span>
+            </button>
+            <button id="twoPageView" class="secondaryToolbarButton twoPageView" title="Two Page View" tabindex="28" data-l10n-id="two_page_view">
+              <span data-l10n-id="two_page_view_label">Two Page View</span>
+            </button>
+            <button id="twoPageViewShowCoverPage" class="secondaryToolbarButton twoPageViewShowCoverPage toggled hidden" title="Show Cover Page" tabindex="29" data-l10n-id="two_page_view_show_cover_page">
+              <span data-l10n-id="two_page_view_show_cover_page_label">Show Cover Page</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Enable hand tool" tabindex="30" data-l10n-id="hand_tool_enable">
               <span data-l10n-id="hand_tool_enable_label">Enable hand tool</span>
             </button>
-            
+
             <div class="horizontalToolbarSeparator"></div>
 
             <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="61" data-l10n-id="document_properties">
@@ -241,10 +254,10 @@ http://sourceforge.net/adobe/cmap/wiki/License/
                 </a>
 
                 <div class="verticalToolbarSeparator hiddenSmallView"></div>
-                
+
                 <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="36" data-l10n-id="tools">
                   <span data-l10n-id="tools_label">Tools</span>
-                </button> 
+                </button>
               </div>
               <div class="outerCenter">
                 <div class="innerCenter" id="toolbarViewerMiddle">

@@ -904,6 +904,16 @@ html[dir='rtl'] .toolbarButton.pageDown::before {
 .toolbarButton.print::before,
 .secondaryToolbarButton.print::before {
   content: url(images/toolbarButton-print.png);
+  left: 6px;
+}
+
+html[dir="ltr"] .secondaryToolbarButton.print::before,
+html[dir="ltr"] .secondaryToolbarButton.twoPageView::before {
+  left: 3px;
+}
+html[dir="rtl"] .secondaryToolbarButton.print::before,
+html[dir="rtl"] .secondaryToolbarButton.twoPageView::before {
+  right: 3px;
 }
 
 .toolbarButton.openFile::before,
@@ -1004,6 +1014,18 @@ html[dir="rtl"] .secondaryToolbarButton > span {
 
 .secondaryToolbarButton.rotateCw::before {
   content: url(images/secondaryToolbarButton-rotateCw.png);
+}
+
+.secondaryToolbarButton.onePageView::before {
+  content: url(images/secondaryToolbarButton-onePageView.png);
+}
+
+.secondaryToolbarButton.twoPageView::before {
+  content: url(images/secondaryToolbarButton-twoPageView.png);
+}
+
+.secondaryToolbarButton.twoPageViewShowCoverPage::before {
+  content: url(images/secondaryToolbarButton-twoPageViewShowCoverPage.png);
 }
 
 .secondaryToolbarButton.handTool::before {
@@ -1271,6 +1293,28 @@ html[dir='rtl'] .attachmentsItem > button {
 canvas {
   margin: 0;
   display: block;
+}
+
+#viewerContainer .twoPageContainer {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.twoPageContainer .annotationLayer {
+  text-align: left;
+}
+
+.twoPageContainer > .page {
+  display: inline-block;
+  vertical-align: top;
+}
+html[dir='ltr'] .twoPageContainer > .page:first-child:not(:only-child),
+html[dir='rtl'] .twoPageContainer > .page:last-child:not(:only-child) {
+  margin-right: -7px;
+}
+html[dir='ltr'] .twoPageContainer > .page:last-child:not(:only-child),
+html[dir='rtl'] .twoPageContainer > .page:first-child:not(:only-child) {
+  margin-left: -7px;
 }
 
 .page {

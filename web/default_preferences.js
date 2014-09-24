@@ -23,6 +23,7 @@
 var DEFAULT_PREFERENCES = {
   showPreviousViewOnLoad: true,
   defaultZoomValue: '',
+<<<<<<< HEAD
   sidebarViewOnLoad: 0,
   enableHandToolOnLoad: false,
   enableWebGL: false,
@@ -37,4 +38,8 @@ var DEFAULT_PREFERENCES = {
   disableTextLayer: false,
   useOnlyCssZoom: false
 //#endif
+=======
+  ifAvailableShowOutlineOnLoad: false,
+  twoPageViewModeOnLoad: -1
+>>>>>>> snuffeleupagus/twoPageViewMode
 };
